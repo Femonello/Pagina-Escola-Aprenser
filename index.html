@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Aprenser - Seção 9</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapContainer-dark wrapContainer-fixed" id="inicio"> <!-- Div para elemento de imagem 
+                                        A ideia dessa div é formatar a cor de fundo do cabeçalho que será 
+                                        a mesma do footer  -->
+        <header class="header container">
+            <a href="#inicio"><img src="imagens/logoAprenser.png" alt="logoipo Aprenser" class="top-logo"></a>
+            <nav class="top-nav">
+                <ul class="top-nav__list">
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#escola">Nossa Escola</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="wrapContainer-hero"> <!-- Essa div tem como função formatar a cor de fundo sem que o restante do 
+                                         conteúdo da página seja deslocado do centro -->
+                                        
+        <section class="container heroBanner">
+            <div class="heroLeft">
+                <h1 class="hero-title">O saber é o que transforma nosso <spam class="hero-spam">ser</spam></h1>
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
+            <img src="imagens/HeroImage.png" alt="Mulher segurando flores">
+        </section>
+    </div>
+
+    <div class="wrapContainer-light wrapContainer-pad" id="cursos"> <!-- Div para "segurar" a cor de fundo clara fomatada nas sessõs de cursos e contatos-->
+                                        
+        <section  class="cursos container"> <!-- o Id aqui em o mesmo nome usado no src da top nav #cursos 
+                                                            Isso fará com que ao clicar no link o navegador realize o scroll-->
+            <h2 class="painel-title">Principais Cursos</h2>
+            <div class="cursosContainer"> <!--div para formatação display flex - alinhamento das imagens lado a lado-->
+                <article class="cursos_card">
+                    <img src="imagens/curso-design.png" alt="" class="painel-details__img">
+                    <div class="cursos_card_content">
+                        <h3 class="painel-detals_name">Design para web</h3>
+                        <p class="painel-details__descr">
+                            O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="cursos_card">
+                    <img src="imagens/curso-design-1.png" alt="" class="painel-details__img">
+                    <div class="cursos_card_content">
+                        <h3 class="painel-detals_name">Front End Developer</h3>
+                        <p class="painel-details__descr">
+                            Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares
+                        </p>
+                    </div>      
+                </article>
+
+                <article class="cursos_card">
+                    <img src="imagens/curso-design-2.png" alt="" class="painel-details__img">
+                    <div class="cursos_card_content">
+                        <h3 class="painel-detals_name">Back End Developer</h3>
+                        <p class="painel-details__descr">
+                            Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <a href="" class="section_btn btn">Ver mais cursos</a>
+        </section>
+    </div>
+        
+    <div class="wrapContainer-dark2 wrapContainer-pad" id="escola">
+        <section  class="escola container">
+            <img src="imagens/nossa-escola.png" alt="Mulher jovem sorrindo">
+            <div class="escola-descr">
+                <h2>Nossa Escola</h2>
+                <p>
+                    Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <div class="wrapperContainer-light wrapContainer-pad"  id="contatos">
+        <section class="container contatos">
+            <h2 class="contatos-title">Contatos</h2>
+            <!-- <img src="imagens/map.png" alt="mapa" class="contats-map"> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29308.36237199671!2d-45.95399696516369!3d-23.33225100591317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdcb695d0d0b4d%3A0x2f47244c9827d55!2sEspa%C3%A7o%20Ventura%20Coworking!5e0!3m2!1spt-BR!2sbr!4v1690482619069!5m2!1spt-BR!2sbr" width=100% height="525" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <address> <!-- Informações de contato do dono da página -->
+                Av. da Liberdade, 1001 <br>
+                Tel.: +351 21 123 456<br>
+                E-mail: contato@aprenser.com
+            </address>
+        </section>
+    </div>
+
+    <div class="wrapContainer-dark">
+        <footer class="footer">
+            <p>Desenvolvido por Serliv - Reprodução aluna Fernanda Monello</p>
+        </footer>
+    </div>
+</body>
+</html>
